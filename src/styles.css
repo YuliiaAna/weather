@@ -1,0 +1,24 @@
+.day {
+  font-family: "Secular One", sans-serif;
+  text-align: center;
+  opacity: 60%;
+}
+.emoji {
+  display: block;
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+}
+.bigemoji {
+  display: block;
+  margin: 0 auto;
+  width: 3em;
+  height: 3em;
+}
+.blue {
+  color: blue;
+}
+.EnterCity {
+  width: 100%;
+  text-align: center;
+}
