@@ -112,6 +112,7 @@ function changeCity(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(showTemperature);
+  document.getElementById("CityInput").value = "";
 }
 
 let FormCityInput = document.querySelector("#CityForm");
