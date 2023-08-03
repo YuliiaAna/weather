@@ -22,3 +22,12 @@
   width: 100%;
   text-align: center;
 }
+.weather-wrapper {
+  max-width: 700px;
+  margin: 20px auto;
+}
+.weather-maxsize {
+  padding: 10px;
+  border: 1px solid #94edb5;
+  border-radius: 4px;
+}
