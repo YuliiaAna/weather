@@ -20,20 +20,28 @@ let cityInput = "";
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   //console.log(temperature);
-  //console.log(response);
+  console.log(response);
   document.getElementById("Temperature").innerHTML = temperature;
-  //  document.getElementById("Precipitation").innerHTML = response.data.???????;
+  document.getElementById("Description").innerHTML =
+    response.data.weather[0].description;
   document.getElementById("Humidity").innerHTML = response.data.main.humidity;
   document.getElementById("Wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  document.getElementById("City").innerHTML = response.data.name;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function changeCity(event) {
   event.preventDefault();
   cityInput = document.querySelector("#CityInput");
   console.log(cityInput.value);
-  document.getElementById("City").innerHTML = cityInput.value;
 
   let apiKey = "2d96d64425dca1d6eda00d942a281c0d";
   let units = "metric";

@@ -11,12 +11,14 @@
 }
 .bigemoji {
   display: block;
-  margin: 0 auto;
-  width: 3em;
-  height: 3em;
+  margin: 5px 0 auto;
+  width: 5em;
+  height: 5em;
+  background-color: rgba(18, 53, 158, 0.237);
+  border-radius: 10px;
 }
 .blue {
-  color: blue;
+  color: rgb(6, 6, 221);
 }
 .EnterCity {
   width: 100%;
