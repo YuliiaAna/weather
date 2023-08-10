@@ -18,7 +18,7 @@
   border-radius: 10px;
 }
 .blue {
-  color: rgb(6, 6, 221);
+  color: rgb(13, 13, 157);
 }
 .EnterCity {
   width: 100%;
@@ -33,8 +33,18 @@
   border: 1px solid #94edb5;
   border-radius: 4px;
 }
+
 .temperature-units {
   position: relative;
   font-size: 15px;
   top: -15px;
+}
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
 }
