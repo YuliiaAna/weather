@@ -21,105 +21,50 @@
     <div class="container">
       <div class="weather-wrapper">
         <div class="weather-maxsize">
-          
-      <p class="day"><strong><span id="ItIsToday"></span></strong></strong></p>
+          <br/ > 
+          <p class="day"><span id="ItIsToday"></p>
       
-       <form id="CityForm">
+          <form id="CityForm">
         
-       <input  type="text" class = "EnterCity" placeholder="🔍 your city" id="CityInput"/>
+            <input  type="text" class = "EnterCity" placeholder="🔍 your city" id="CityInput"/>
     
-  </form>
-      <br/ > 
-      <div class="container text-center">
-          
-          <div class="row">
-            <div class="col-auto me-auto">
+          </form>
+          <br/ > 
+          <div class="container text-center">          
+            <div class="row">
+              <div class="col-auto me-auto">
                 <h1><span id="Temperature"></span><span class="temperature-units"><a href="#" id="linkCelsius" class="active">°C</a> | <a href="#" id="linkFahrenheit" class="active">°F</a></span></h1>
-                <p>
-                <font  size="5em"><span id="Description"> clouds </span></font><br />
-                Humidity: <strong><span id="Humidity"> </span></strong> %<br />
-                Wind: <strong><span id="Wind"> </span></strong> km/h
-            </div>
-            
-            <div class="col-auto"><h4>
-            <img  id="icon" class="bigemoji" /></h4>
-            </div>
-            <div class="col-auto"><h1><span id="City">
-            </span></h1>
-              </p>
-              Last updated
-              <h3><font color="#1CC24B"><span id="ItIsTime"></span></font></h3>
-            </div>
-          </div>
-        </div>
-        <br/ >
-        <div class="row row-cols-5 g-4 row text-center ">
-          <div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-              <h6>Sun</h6><br/ >
-              <img src="https://em-content.zobj.net/source/skype/289/cloud-with-rain_1f327-fe0f.png"
-              
-              class="emoji"/><br/ >
-              <h5 class="blue">13°</h5>
+                
+                <font  size="3em"><span id="Description"></span></font><br />
+                humidity <strong><span id="Humidity"> </span></strong> %<br />
+                wind <strong><span id="Wind"> </span></strong> km/h
+             </div>
+             
+             <div class="col-auto">
+                <img  id="icon" class="bigemoji"/>
+             </div>
+             <div class="col-auto"><h1><span id="City">
+                </span></h1>
+                
+                last updated
+                <h3><font color="03918e"><span id="ItIsTime"></span></font></h3>
+             </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h6>Mon</h6><br/ >
-                <img
-                  src="https://em-content.zobj.net/source/skype/289/cloud-with-snow_1f328-fe0f.png"
-                  class="emoji"
-                  /><br/ >
-                <h5 class="blue">6°</h5>
-              </div>
-            </div>
+          
+          <br/ >
+ 
+          <div class="row row-cols-5 g-4 row text-center" id="forecast">
           </div>
-          <div class="col">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h6>Tue</h6><br/ >
-                  <img
-                    src="https://em-content.zobj.net/source/skype/289/sun-behind-rain-cloud_1f326-fe0f.png"
-                    class="emoji"
-                  /><br/ >                              
-                  <h5 class="blue">6°</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <h6>Wen</h6><br/ >
-                    <img
-                      src="https://em-content.zobj.net/source/skype/289/cloud_2601-fe0f.png"
-                      class="emoji"
-                    /><br/ >                  
-                  <h5 class="blue">9°</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h6>Thu</h6><br/ >
-                      <img
-                        src="https://em-content.zobj.net/source/skype/289/cloud-with-rain_1f327-fe0f.png"
-                        class="emoji"
-                      /><br/ >                    
-                      <h5 class="blue">14°</h5>
-                    </div>
-                  </div>
-                </div>
+        
+          <script src="src/index.js"></script> 
+          <br/ > 
 
-    <script src="src/index.js"></script>
-
-    </div> 
-    </div>
-    <a href="https://github.com/YuliiaAna/weather" target="_blanc">Open-source code</a> 
-    by Yuliia Botsuliak
+        </div>
+        <br/ > 
+         <a href="https://github.com/YuliiaAna/weather" target="_blanc">Open-source code</a> 
+         by Yuliia Botsuliak
+      </div>
     </div>
   </body>
 </html>
